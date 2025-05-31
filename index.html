@@ -14,32 +14,47 @@
         margin: 0;
         padding: 0;
         font-family: "Lucida Console", Monaco, monospace;
-        color: #CCC5B9;
+        color: #00FF00;
     }
-    </style>    
+    a {
+        color: #00BFFF;
+    }
+    strong {
+        color: #00FF00;
+    }
+    #command-line span {
+        color: #00FF00;
+    }
+    input[type="text"] {
+        background-color: #000;
+        color: #00FF00;
+        border: none;
+        outline: none;
+        font-family: inherit;
+        width: 90%;
+    }
+    </style>
 </head>
 
 <body>
     <div>
-        <div>
-            <hr style="border-color:white; border-width:5px" />
-            <center><strong>Joe Potkanowicz Resume</strong></center>
-            <center>See My PDF Resume - <a href="https://joe.potkanowicz.com/resume.pdf" target="_blank">https://joe.potkanowicz.com/resume.pdf</a></center>
-            <hr style="border-color:white; border-width:5px" />
+        <hr style="border-color:#00FF00; border-width:5px" />
+        <center><strong>Joe Potkanowicz Resume</strong></center>
+        <center>See My PDF Resume - <a href="https://joe.potkanowicz.com/resume.pdf" target="_blank">https://joe.potkanowicz.com/resume.pdf</a></center>
+        <hr style="border-color:#00FF00; border-width:5px" />
+    </div>
+
+    <div id="resume-container">
+        <div id="executed_commands">
+            <div>Note: Enter <i>help</i> to get list of all available commands</div>
         </div>
 
-        <div id="resume-container">
-            <div id="executed_commands">
-                <div>Note: Enter <i>help</i> to get list of all available commands</div>
-            </div>
-
-            <div id="command-line">
-                <span>&gt;&gt;</span>
-                <input type="text" autofocus="autofocus" id="command" />
-            </div>
+        <div id="command-line">
+            <span>&gt;&gt;</span>
+            <input type="text" autofocus="autofocus" id="command" />
         </div>
     </div>
-    
+
     <!-- Resume Sections -->
 
     <div id="about">
@@ -49,62 +64,52 @@
 
     <div id="education">
         <div><strong>Education</strong></div>
-        <div>
-            <ul>
-                <li><strong>Colorado State University, Fort Collins, CO</strong> — B.S. in Cyber Security (Expected Dec 2025)</li>
-                <li><strong>Front Range Community College, Fort Collins, CO</strong> — August 2016 - May 2018</li>
-                <li><strong>Fossil Ridge High School, Fort Collins, CO</strong> — August 2012 - May 2016</li>
-            </ul>
-        </div>
+        <ul>
+            <li><strong>Colorado State University, Fort Collins, CO</strong> — B.S. in Cyber Security (Expected Dec 2025)</li>
+            <li><strong>Front Range Community College, Fort Collins, CO</strong> — August 2016 - May 2018</li>
+            <li><strong>Fossil Ridge High School, Fort Collins, CO</strong> — August 2012 - May 2016</li>
+        </ul>
     </div>
 
     <div id="projects">
         <div><strong>Projects</strong></div>
-        <div>
-            <ul>
-                <li><strong>Dark Space Labs</strong> — Web hosting & development platform offering Dockerized solutions and small business IT infrastructure.</li>
-                <li><strong>Cloud Hosting Stack</strong> — Custom deployment pipelines and Linux-based servers for scalable website delivery.</li>
-            </ul>
-        </div>
+        <ul>
+            <li><strong>Dark Space Labs</strong> — Web hosting & development platform offering Dockerized solutions and small business IT infrastructure.</li>
+            <li><strong>Cloud Hosting Stack</strong> — Custom deployment pipelines and Linux-based servers for scalable website delivery.</li>
+        </ul>
     </div>
 
     <div id="experience">
         <div><strong>Experience</strong></div>
-        <div>
-            <ul>
-                <li><strong>Precision Landscape and Maintenance — General Manager</strong> (July 2015 - Present)</li>
-                <p>Scaled company from 3 to 100+ employees. Oversaw operations, payroll, compliance, customer relations, vendor negotiation, and long-term growth.</p>
+        <ul>
+            <li><strong>Precision Landscape and Maintenance — General Manager</strong> (July 2015 - Present)</li>
+            <p>Scaled company from 3 to 100+ employees. Oversaw operations, payroll, compliance, customer relations, vendor negotiation, and long-term growth.</p>
 
-                <li><strong>Dark Space Labs — Founder</strong> (Jan 2023 - Present)</li>
-                <p>Founded and operate a custom web development agency. Handle full-stack development, client relationships, and infrastructure management.</p>
+            <li><strong>Dark Space Labs — Founder</strong> (Jan 2023 - Present)</li>
+            <p>Founded and operate a custom web development agency. Handle full-stack development, client relationships, and infrastructure management.</p>
 
-                <li><strong>Harmony Gardens — Sales Associate</strong> (Feb 2012 - July 2015)</li>
-                <p>Assisted with sales and customer service for landscape materials. Improved retail display and product organization.</p>
-            </ul>
-        </div>
+            <li><strong>Harmony Gardens — Sales Associate</strong> (Feb 2012 - July 2015)</li>
+            <p>Assisted with sales and customer service for landscape materials. Improved retail display and product organization.</p>
+        </ul>
     </div>
 
     <div id="skills">
         <div><strong>Technical Skills</strong></div>
-        <div>
-            <ul>
-                <li><strong>Business</strong> — Sales, Accounting, Payroll, Compliance, Team Management</li>
-                <li><strong>Web</strong> — HTML, CSS, JavaScript, PHP, WordPress</li>
-                <li><strong>IT</strong> — Server Setup, Linux Admin, Networking</li>
-                <li><strong>Cloud</strong> — Docker, Hosting, DevOps Pipelines</li>
-                <li><strong>Cybersecurity</strong> — (In Progress) BS in Cybersecurity at CSU</li>
-                <li><strong>Leadership</strong> — Strategic Planning, Budgeting, Business Development</li>
-            </ul>
-        </div>
+        <ul>
+            <li><strong>Business</strong> — Sales, Accounting, Payroll, Compliance, Team Management</li>
+            <li><strong>Web</strong> — HTML, CSS, JavaScript, PHP, WordPress</li>
+            <li><strong>IT</strong> — Server Setup, Linux Admin, Networking</li>
+            <li><strong>Cloud</strong> — Docker, Hosting, DevOps Pipelines</li>
+            <li><strong>Cybersecurity</strong> — (In Progress) BS in Cybersecurity at CSU</li>
+            <li><strong>Leadership</strong> — Strategic Planning, Budgeting, Business Development</li>
+        </ul>
 
         <div><strong>Certifications</strong></div>
-        <div>
-            <ul>
-                <li><strong>Landscape Industry Certified Manager (LICM)</strong></li>
-                <li><strong>Foundations of Business Certificate</strong> — Front Range Community College</li>
-                <li><strong>Foundations of Leadership & Management Certificate</strong> — Front Range Community College</li>
-            </ul>
-        </div>
+        <ul>
+            <li><strong>Landscape Industry Certified Manager (LICM)</strong></li>
+            <li><strong>Foundations of Business Certificate</strong> — Front Range Community College</li>
+            <li><strong>Foundations of Leadership & Management Certificate</strong> — Front Range Community College</li>
+        </ul>
     </div>
 
     <div id="contact">
@@ -135,6 +140,6 @@
         </div>
     </div>
 
-    <script type='text/javascript' src="resume.js"></script>    
+    <script type='text/javascript' src="resume.js"></script>
 </body>
 </html>
